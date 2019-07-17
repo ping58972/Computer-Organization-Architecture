@@ -1,4 +1,4 @@
-# Computer-Organization-Architecture
+# Computer-Organization-Architecture-Assignments-CSCI2016
 
 <img src="https://a.imge.to/2019/07/17/L7gLH.png" target="_blank" alt="Computer-Organization-Architecture">
 <img src="https://a.imge.to/2019/07/17/L7jJW.png" target="_blank" alt="Computer-Organization-Architecture">
