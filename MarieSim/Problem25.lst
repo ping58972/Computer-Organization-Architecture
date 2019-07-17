@@ -1,0 +1,34 @@
+     Assembly listing for: Problem25.mas
+                Assembled: Fri Feb 22 15:57:52 CST 2019
+
+         |         ORG 200           
+200 1209 |  Begin  LOAD Base         
+201 320A |  Loop   ADD Offs          
+202 420B |         SUBT One          
+203 220C |         STORE Addr        
+204 8800 |         SKIPCOND 800      
+205 9208 |         JUMP Done         
+206 C20C |         JUMPI Addr        
+207 A000 |         CLEAR             
+208 7000 |  Done   HALT              
+209 0200 |  Base   HEX 200           
+20A 0009 |  Offs   DEC 9             
+20B 0001 |  One    HEX 0001          
+20C 0000 |  Addr   HEX 0000          
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          Addr   |   20C   | 203, 206
+          Base   |   209   | 200
+          Begin  |   200   | 
+          Done   |   208   | 205
+          Loop   |   201   | 
+          Offs   |   20A   | 201
+          One    |   20B   | 202
+         --------------------------------------------------
+
+

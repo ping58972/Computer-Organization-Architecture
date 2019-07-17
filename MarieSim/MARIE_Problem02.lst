@@ -1,0 +1,26 @@
+     Assembly listing for: MARIE_Problem02.mas
+                Assembled: Fri Feb 22 20:40:37 CST 2019
+
+         |         ORG 100           
+100 5000 |         INPUT             
+101 2108 |         STORE A           
+102 5000 |         INPUT             
+103 2109 |         STORE B           
+104 1108 |         LOAD A            
+105 4109 |         SUBT B            
+106 6000 |         OUTPUT            
+107 7000 |         HALT              
+108 0000 |  A      DEC 0             
+109 0000 |  B      DEC 0             
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          A      |   108   | 101, 104
+          B      |   109   | 103, 105
+         --------------------------------------------------
+
+

@@ -1,0 +1,25 @@
+     Assembly listing for: trySimple.mas
+                Assembled: Fri Feb 22 14:58:09 CST 2019
+
+         |         ORG 100           
+         |                          
+100 1104 |         LOAD A            
+101 3105 |         ADD ONE           
+102 2106 |         STORE S1          
+103 7000 |         HALT              
+104 0023 |  A      HEX 0023          
+105 0055 |  ONE    HEX 0055          
+106 0001 |  S1     HEX 0001          
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          A      |   104   | 100
+          ONE    |   105   | 101
+          S1     |   106   | 102
+         --------------------------------------------------
+
+

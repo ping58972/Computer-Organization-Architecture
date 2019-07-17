@@ -1,0 +1,35 @@
+     Assembly listing for: MARIE_Problem03.mas
+                Assembled: Mon Feb 25 17:36:17 CST 2019
+
+         |          ORG 100            
+100 110E |          LOAD One           
+101 210D |          STORE X           /Initialize X
+102 6000 |          OUTPUT             
+103 110D |  Loop    LOAD X            /Load loop constant
+104 410F |          SUBT Ten          /Compare X to 10
+105 8000 |          SKIPCOND 000      /If AC<0 (X is less than 10), continue loop
+106 910C |          JUMP Endloop      /If X is not less than 10, terminate loop
+107 110D |          LOAD X            /Begin body of loop
+108 310E |          ADD One           /Add 1 to X
+109 210D |          STORE X           /Store new value in X
+10A 6000 |          OUTPUT             
+10B 9103 |          JUMP Loop         /Continue loop
+10C 7000 |  Endloop HALT              /Terminate program
+10D 0000 |  X       DEC 0             /Storage for X
+10E 0001 |  One     DEC 1             /The constant value 1
+10F 000A |  Ten     DEC 10            /The loop constant
+
+Assembly successful.
+
+         SYMBOL TABLE
+         ---------------------------------------------------
+          Symbol  | Defined | References 
+         ---------+---------+-------------------------------
+          Endloop |   10C   | 106
+          Loop    |   103   | 10B
+          One     |   10E   | 100, 108
+          Ten     |   10F   | 104
+          X       |   10D   | 101, 103, 107, 109
+         ---------------------------------------------------
+
+

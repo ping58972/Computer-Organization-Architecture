@@ -1,0 +1,11 @@
+ORG 100
+LOAD X
+ADD one
+ADD two
+/ADD three
+OUTPUT
+HALT
+X, DEC 1
+one, DEC 2
+two, DEC 3
+/three, DEC 3

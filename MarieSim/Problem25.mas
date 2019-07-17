@@ -1,0 +1,14 @@
+ORG 200
+Begin, LOAD Base
+Loop, ADD Offs
+SUBT One
+STORE Addr
+SKIPCOND 800
+JUMP Done
+JUMPI Addr
+CLEAR
+Done, HALT
+Base, HEX 200
+Offs, DEC 9
+One, HEX 0001
+Addr, HEX 0000

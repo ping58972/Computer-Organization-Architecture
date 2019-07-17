@@ -1,0 +1,16 @@
+     Assembly listing for: Problem28.mas
+                Assembled: Fri Feb 22 16:15:03 CST 2019
+
+000 ???? |         5C0               
+   **** Instruction not recognized.
+   **** Missing operand.
+
+2 errors found.  Assembly unsuccessful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+         --------------------------------------------------
+
+

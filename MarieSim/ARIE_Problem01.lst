@@ -1,0 +1,27 @@
+     Assembly listing for: ARIE_Problem01.mas
+                Assembled: Fri Feb 22 20:34:21 CST 2019
+
+         |         ORG 100           
+100 1105 |         LOAD X            
+101 3106 |         ADD one           
+102 3107 |         ADD two           
+         |                          /ADD three
+103 6000 |         OUTPUT            
+104 7000 |         HALT              
+105 0001 |  X      DEC 1             
+106 0002 |  one    DEC 2             
+107 0003 |  two    DEC 3             
+         |                          /three, DEC 3
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          X      |   105   | 100
+          one    |   106   | 101
+          two    |   107   | 102
+         --------------------------------------------------
+
+
